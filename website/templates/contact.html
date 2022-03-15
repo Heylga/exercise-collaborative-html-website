@@ -1,37 +1,32 @@
 <!-- your html code here -->
-<div class="container-xl">
-    <h1> Contact </h1>
-    <h5>Donec ullamcoper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+<div class="container-fluid pb-2">
+    <div class="row d-flex justify-content-center">
+        <div class="col-10">
+    <h1 class="font-roboto"> Contact </h1>
+    <p class="fs-5">Donec ullamcoper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+        Praesent
         commodo cursus magna, vel scelerisque nisl consectetur.
-        Fusce dapibus, tellus ac cursus commodo. </h5>
+        Fusce dapibus, tellus ac cursus commodo. </p>
+    </div>
 </div>
-<form>
-    <div class="container">
-        <span class="placeholder col-8 bg-light">
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Your E-mail</label>
-                <div class="col-sm-6">
+</div>
+<form class="d-flex justify-content-center mb-5">
+    <div class="card bg-light" style="width: 48rem;">
+        <div class="card-body">
+            <div class="row mb-3 text text-end">
+                <label for="inputEmail3" class="col-sm-3 fw-bold pt-1">Your E-mail</label>
+                <div class="col-sm-9 d-inline-flex">
                     <input type="email" class="form-control" id="inputEmail3" placeholder="Your email">
                 </div>
             </div>
-            <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Your message</label>
-                <div class="col-sm-6">
-                    <input type="input-group-text" class="form-control" id="inputPassword3"
-                        placeholder="Please enter your message here...">
-                    <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea">
-                        </textarea>
-                    </div>
+            <div class="row mb-3 text-end">
+                <label for="Textarea" class="col-sm-3 fw-bold pt-1">Your message</label>
+                <div class="col-sm-9 d-inline-flex">
+                    <textarea class="form-control pl-2" id="Textarea" rows="4"
+                        placeholder="Please enter your message here..."></textarea>
                 </div>
-                <!--Button-->
-                <div class="form-group row">
-                    <div class="col-sm-2 float-right">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-
             </div>
-        </span>
+            <button type="submit" class="btn-lg btn-primary float-end mb-3">Submit</button>
+        </div>
     </div>
 </form>
